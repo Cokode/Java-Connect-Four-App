@@ -45,7 +45,6 @@
       <version>1.4.11</version>
       <scope>test</scope>
     </dependency>
-depen
   </dependencies>
 
   <build>
