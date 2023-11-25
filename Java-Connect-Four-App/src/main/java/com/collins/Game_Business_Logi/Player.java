@@ -18,4 +18,26 @@ public class Player {
     this.isHuman = true;
     this.numberOfWinningGames = 0;
   }
+
+  public String getPlayerName() {
+    return playerName;
+  }
+
+
+  public DiscColor getDiscColor() {
+    return discColor;
+  }
+
+  public boolean isHuman() {
+    return isHuman;
+  }
+  
+
+  public int getNumberOfWinningGames() {
+    return numberOfWinningGames;
+  }
+
+  public void setNumberOfWinningGames(int numberOfWinningGames) {
+    this.numberOfWinningGames = numberOfWinningGames;
+  }
 }
