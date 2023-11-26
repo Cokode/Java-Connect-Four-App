@@ -31,7 +31,7 @@ public class Player {
   public boolean isHuman() {
     return isHuman;
   }
-  
+
 
   public int getNumberOfWinningGames() {
     return numberOfWinningGames;
