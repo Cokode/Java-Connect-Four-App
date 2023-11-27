@@ -18,4 +18,18 @@ public class GameBoard {
   public List<Player> getPlayers() {
     return Players;
   }
+
+  public void checkWinnersHorizontally () {
+    for (int i = 0; i < table.size(); ++i) {
+      
+    }
+  }
+
+  @Override
+  public String toString() {
+    return "GameBoard{" +
+            "table=" + table +
+            ", Players=" + Players +
+            '}';
+  }
 }
