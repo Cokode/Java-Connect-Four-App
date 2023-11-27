@@ -19,10 +19,18 @@ public class GameBoard {
     return Players;
   }
 
-  public void checkWinnersHorizontally () {
-    for (int i = 0; i < table.size(); ++i) {
-      
+  public boolean checkWinnersHorizontally (int playerCard) {
+    int index = 0;
+    int winnerCount = 0;
+
+    for (List<Integer> row = table.get(index); index < table.size(); ++index) {
+      for (int boxValue : row) {
+        winnerCount = boxValue == playerCard ? ++winnerCount : 0;
+        if (winnerCount == (playerCard * 4)) return true;
+      }
     }
+
+    return false;
   }
 
   @Override
