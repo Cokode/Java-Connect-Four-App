@@ -7,6 +7,11 @@ public class GameBoard {
   List<List<Integer>> table;
   List<Player> players;
 
+  GameHistory gameHistory =
+          new GameHistory("Collins",
+                  DiscColor.RED,
+                  5,
+                  20);
 
   public GameBoard() {
     table = new ArrayList<>(2);
