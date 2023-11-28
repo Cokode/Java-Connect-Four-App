@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.*;
 
 public class GameBoard {
-  List<List<Integer>> table = new ArrayList<>();
-  List<Player> Players = new ArrayList<>(2);
+  List<List<Integer>> table;
+  List<Player> players;
+
 
   public GameBoard() {
-
+    table = new ArrayList<>(2);
   }
 
   public List<List<Integer>> getTable() {
@@ -16,7 +17,7 @@ public class GameBoard {
   }
 
   public List<Player> getPlayers() {
-    return Players;
+    return players;
   }
 
   public boolean checkWinnersHorizontally (int playerCard) {
@@ -52,7 +53,7 @@ public class GameBoard {
   public String toString() {
     return "GameBoard{" +
             "table=" + table +
-            ", Players=" + Players +
+            ", Players=" + players +
             '}';
   }
 }
