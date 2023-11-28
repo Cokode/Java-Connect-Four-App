@@ -33,6 +33,21 @@ public class GameBoard {
     return false;
   }
 
+  public boolean checkWinnersVertically (int playerCard) {
+    int winnerCount = 0;
+
+    for (int i = 0; i < table.get(0).size(); ++i) {
+      for (List<Integer> row : table) {
+        if(row.get(i).equals(playerCard)) {
+          ++winnerCount;
+          if (winnerCount == 4) return true;
+        }
+      }
+    }
+
+    return false;
+  }
+
   @Override
   public String toString() {
     return "GameBoard{" +
